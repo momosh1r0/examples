@@ -26,12 +26,12 @@ def setup_logging(filename):
   global logger
 
   logging.basicConfig(
-		filename=filename,
-		filemode='w',
-		format='%(asctime)s %(message)s',
-		datefmt='%H:%M:%S',
-		level=logging.INFO
-	)
+    filename=filename,
+    filemode='w',
+    format='%(asctime)s %(message)s',
+    datefmt='%H:%M:%S',
+    level=logging.INFO
+  )
   logger = logging.getLogger(filename)
   logger.addHandler(logging.StreamHandler())
 
