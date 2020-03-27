@@ -14,9 +14,9 @@ import requests
 from threading import Thread
 # Support python 2-3 Queue
 if sys.version[0] == '2':
-    import Queue as queue
+  import Queue as queue
 else:
-    import queue as queue
+  import queue as queue
 
 logger = None
 
